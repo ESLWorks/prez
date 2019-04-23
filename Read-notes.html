@@ -1,0 +1,60 @@
+First, link the style sheet and the html sheet.
+Create a title to be displayed in the tab.
+Notice tabs have icons? Yeah? Those are favicons.
+  Quick favicons can be made at https://www.favicon.cc/
+Once you create your favicon, download it. Open the folder
+you want it to be in. Then, in Chrome, drag the download.ext
+ right into the folder you want the favicon in.
+Favicons are linked in the head, using:
+<!-- The url <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAD6APqBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERERAiIiIAERERECIiIgAREREQIiIiABEQAAAiIAAAERAAACIgAAAREAAAIiAAABEREQAiIAAAERERACIgAAAREREAIiAAABEQAAAiIAAAERAAACIgAAAREREQIiAAABERERAiIAAAERERECIgAAAAAAAAAAAAD//wAAgIEAAICBAACAgQAAj48AAI+PAACPjwAAgY8AAIGPAACBjwAAj48AAI+PAACAjwAAgI8AAICPAAD//wAA" rel="icon" type="image/x-icon" />
+Or the relative link <link rel="icon" rel="icon" type="image/x-icon" href="ABSOLUTE OR RELATIVE LINK"> -->
+
+When styling with CSS, keep in mind the web browser applies default styling.
+The browser has a style sheet called user agent stylesheet. Look up it up,
+look at the assumptions, or at least read a quick summary on it so the fact
+that the browser has default settings, sticks with you. You don't want to be
+freaking out about your code not producing a desired result when it's the
+web browser's assumptions in the way of the desired change.
+
+
+Create a simple html page and inspect it in Google Chrome.
+You'll see then that an H1 tag automatically has:
+  h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+as default styles.
+
+Know how people have distinguishable sections of a page?
+You may have seen large centered text, behind a picture or a background?
+Yeah, we're finally about to do that.
+
+HTML and CSS uses boxes and alignment to position text, pics, etc.
+With HTML div, we can divide up the content on a webpage. The thing is,
+div doesn't make any apparent changes on the webpage without CSS.
+
+<!-- Look, <div></div> doesn't make any apparent changes without CSS but with -->
+div {
+  height:100px;
+} you get a 100px-high space. And you can actually see it by including
+a line of CSS into the div above: background-color:COLOR;
+
+div {
+  height:100px
+  background-color:blue;
+}
+
+
+Basic CSS properties to know:
+
+elements (such as DIV):
+- height:300 px; (0 px is written as just 0)
+- width: 250 px; (0 px is written as just 0)
+- border:
+      - 1 border style listed = border for all 4 sides
+      - 2 border listed = 1st top 2nd
